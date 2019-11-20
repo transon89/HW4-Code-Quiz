@@ -1,5 +1,7 @@
 * {
     font-family: 'Ubuntu', sans-serif;
+    background-color: white;
+
 }
 
 header {
@@ -27,6 +29,8 @@ span {
 .text {
     margin-top: 24px;
     margin-bottom: 24px;
+    font weight: bold;
+    
 }
 
 .btn-primary {
@@ -66,4 +70,21 @@ span {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+  }
+  #countdown {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .time {
+      font-size: larger;
+  }
+  .right {
+      font-size: 50px;
+      font-style: italic;
+      background-color:red;
+      float: center;
+      
+  }
+
   }

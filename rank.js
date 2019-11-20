@@ -26,13 +26,13 @@ function renderScores (obj) {
   ul.innerHTML = ''
   var scores = JSON.parse(window.localStorage.getItem('scores'))
 //  console.dir(scores)
-  if (scores !== null) {
+  if (scores !== ()) {
     var sortedScores = sort(scores)
     console.dir(sortedScores)
     for (var key in sortedScores) {
       var li = document.createElement('li')
       li.classList.add('list-group-item')
-      li.textContent = 'Player : ' + sortedScores[key].ini + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 Score : ' + sortedScores[key].value
+      li.textContent = 'Player: ' + sortedScores[key].ini + 'Score : ' + sortedScores[key].value
       ul.appendChild(li)
     }
   }

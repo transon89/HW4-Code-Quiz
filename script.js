@@ -132,6 +132,7 @@ document.querySelector('#choice').addEventListener('click', function (e) {
     score += 300
     document.getElementById('score').textContent = score
     document.querySelector('.answer').textContent = 'Correct!'
+    alert ("You are correct, next question is a little harder, are you ready?")
     if (database.length > 0) {
       makeQC(database)
     } else {
@@ -139,6 +140,7 @@ document.querySelector('#choice').addEventListener('click', function (e) {
     }
   } else {
     document.querySelector('.answer').textContent = 'Wrong!'
+    alert ("wrong answer, minus 10 seconds, try again!!")
     if (ctdown > 1500) {
       ctdown -= 1500
     } else {
